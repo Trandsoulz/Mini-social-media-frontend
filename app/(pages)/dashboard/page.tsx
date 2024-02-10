@@ -121,11 +121,11 @@ const Dashboard = () => {
                           src={images[0]}
                           priority
                           alt={`${description}`}
-                          height={250}
-                          width={250}
-                          className="py-5 w-auto h-auto"
+                          height={270}
+                          width={280}
+                          className="py-5"
                         />
-                        <h1 className="border-4 mb-4 rounded w-[250px] py-2 text-center">
+                        <h1 className="border-4 mb-4 rounded w-[280px] py-2 text-center">
                           {" "}
                           {description}
                         </h1>

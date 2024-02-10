@@ -44,8 +44,8 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <main className=" mx-auto w-1/5">
-        <section className="px-6 py-4">
+      <main className="flex justify-center">
+        <section>
           {userPost ? (
             <>
               {userPost.map(
@@ -61,17 +61,17 @@ const Home = () => {
                   <>
                     <section
                       key={_id}
-                      className=" my-7 w-fit px-4 rounded-lg border-4 "
+                      className="w-fit my-7 px-4 rounded-lg border-4 "
                     >
                       <Image
                         src={images[0]}
                         priority
                         alt={`${description}`}
                         height={200}
-                        width={200}
+                        width={250}
                         className="py-5 "
                       />
-                      <h1 className="border-4 mb-4 rounded w-[200px] py-2 text-center">
+                      <h1 className="border-4 mb-4 rounded w-[250px] py-2 text-center">
                         {" "}
                         {description}
                       </h1>
