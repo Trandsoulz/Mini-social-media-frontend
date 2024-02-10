@@ -165,7 +165,7 @@ const Upload = () => {
                 </p>
               ) : (
                 <p className="p-9 border-2 rounded-md border-dashed border-slate-500 inline-block">
-                  Drag 'n' drop some photo files here, or click to select files
+                  Drag &apos;n&apos; drop some photo files here, or click to select files
                 </p>
               )}
               {/* <ul>{acceptedFileItems}</ul> */}

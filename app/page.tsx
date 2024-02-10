@@ -39,7 +39,7 @@ const Home = () => {
     } catch (err) {
       console.error(err);
     }
-  }, []);
+  }, [token]);
 
   return (
     <>

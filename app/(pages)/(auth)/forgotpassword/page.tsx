@@ -52,7 +52,7 @@ const ForgotPassword = () => {
     <>
       <h1 className="font-semibold text-lg p-8">You forgot your password</h1>
       <h1 className="py-1 px-8">
-        You Lack retentive memory 👊🏽. But, that's a problem for another day
+        You Lack retentive memory 👊🏽. But, that&apos;s a problem for another day
       </h1>
       <h1 className="py-1 px-8">Pls input your email.</h1>
 

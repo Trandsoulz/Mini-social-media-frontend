@@ -53,7 +53,7 @@ const Dashboard = () => {
     } catch (err) {
       console.error(err);
     }
-  }, []);
+  }, [token]);
 
   const handleDelete = async (id: any) => {
     console.log(id);
