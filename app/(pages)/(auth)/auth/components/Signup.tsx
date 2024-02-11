@@ -49,12 +49,18 @@ const Signup = () => {
     ) {
       setLoading(false);
       toast.error("Passwords must be above 8 chars long");
+      return;
     } else if (registerDetails.password !== registerDetails.confirm_password) {
       setLoading(false);
       toast.error("Password mismatch");
-    } else if(registerDetails.phone_number && registerDetails.phone_number.toString().length < 11) {
+      return;
+    } else if (
+      registerDetails.phone_number &&
+      registerDetails.phone_number.toString().length < 11
+    ) {
       setLoading(false);
       toast.error("Phone number must be 11 digits");
+      return;
     } else {
       // Delete the confirm password field, cos it's no longer needed. Turn phone_number to number
       delete registerDetails["confirm_password"];
