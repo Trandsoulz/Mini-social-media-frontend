@@ -32,6 +32,7 @@ const Login = () => {
 
     if (formData.password.length < 8) {
       toast.error("Password is less than 8 char");
+      return;
     }
 
     try {
@@ -76,7 +77,7 @@ const Login = () => {
     // <h1>This is the login form</h1>
 
     <form action="" onSubmit={handleSubmit}>
-      <section >
+      <section>
         <label htmlFor="email">Email</label>
         <input
           type="email"
@@ -86,7 +87,7 @@ const Login = () => {
           onChange={handleInput}
         />
       </section>
-      <section >
+      <section>
         <label htmlFor="password">Password</label>
         <div className="flex">
           <input
